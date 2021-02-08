@@ -1,77 +1,84 @@
-* {
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 body {
-	background: #FAEBD7 url('images/vintage-concrete.png');
-	color: #333;
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  background-color:#051C2C;
+  color: white;
+  background-image: url("./images/bgimage.jpg");
 }
 
+h1 {
+  font-size: 80px;
+  font-family: 'Herr Von Muellerhoff';
+  color: #051C2C;
+  position: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 45px;
+  color: #006975;
+  text-align: center;
+  padding-top: 75px;
+}
+
+main,
+header h1,
+nav div {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+header {
+  padding: 40px 0;
+  background-color: #006975;
+  background-size: cover;
+}
+nav a {
+  padding-right: 45px;
+}
+nav a:hover {
+  color: #8DC63F;
+}
+
+body a:hover {
+	color: #8DC63F;
+}
+nav {
+  padding: 20px;
+  text-align: center;
+  background-color: #0D5257;
+}
 a {
-	text-decoration: none;
-	color: #333;
-}
-
-a:hover { color: Tomato; }
-
-header, nav, main, footer {
-	width: 80%;
-	margin: auto;
-}
-
-
-/* Header styles */
-header { 
-	background-color: #000;
-	color: BlanchedAlmond;
-	min-height: 100px;
-	margin-top: 60px;
-	background-image: url("../images/stars.jpeg");
-}
-
-header h1 {
-	padding: 40px 60px;
-	font-size: 48px;
-}
-
-
-/* Nav styles */
-nav { background-color: #333; }
-nav ul { 
-	display: flex;
-	justify-content: flex-end;
-}
-nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
-nav a:hover { color: white; }
-
-
-/* Main styles */
-main { 
-	background-color: #fff;
-	display: grid;
-	grid-template-columns: 60% 40%;
-}
-
-section {
-	padding: 40px 60px;
-}
-
-section ul, aside ul {
-	list-style-type: square;
-	margin-top: 20px; 
-	margin-left: 30px;
-	margin-bottom: 40px;
-}
-
-aside {
-	padding: 40px 10px;
-}
-
-/* Footer styles */
-footer { 
-	background-color: #000;
 	color: white;
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
 	text-align: center;
+  }
+li {
+	display: inline;
+  }
+
+  /* Footer styles */
+footer { 
+	margin-top: 150px;
+	background-color: none;
+	color: silver;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 5px;
  }
- footer p { padding: 20px; }
+ footer p { padding: 50px; }
+
+
+@media screen and (min-width: 1024px) {
+  .hold {
+    display: flex;
+    justify-content: space-evenly;
+  }
